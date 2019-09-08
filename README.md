@@ -1,13 +1,13 @@
 About r-raster
 ==============
 
-Home: https://www.rspatial.org/
+Home: https://CRAN.R-project.org/package=raster
 
-Package license: GPL (>= 3)
+Package license: GPL-3
 
 Feedstock license: BSD 3-Clause
 
-Summary: Reading, writing, manipulating, analyzing and modeling of gridded spatial data. The package implements basic and high-level functions. Processing of very large files is supported.
+Summary: Reading, writing, manipulating, analyzing and modeling of gridded spatial data. The package implements basic and high-level functions. Processing of very large files is supported. There is a also support for vector data operations such as intersections. See the manual and tutorials on <https://rspatial.org/> to get started.
 
 
 
@@ -76,7 +76,12 @@ Current build status
       </details>
     </td>
   </tr>
-![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
 </table>
 
 Current release info
