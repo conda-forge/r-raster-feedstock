@@ -1,4 +1,4 @@
-{% set version = "3.4-5" %}
+{% set version = "3.4-10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/raster_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/raster/raster_{{ version }}.tar.gz
-  sha256: c6620d790b3aba1b64aec31325f726e63f26a14a1b48c1a0f9167a0b1a64e4a5
+  sha256: 99e690d2af709ef7f9da14730a2069e94caa5c1d6068a0821155739389192df5
 
 build:
   merge_build_host: true  # [win]
