@@ -30,15 +30,18 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-rcpp
-    - r-sp >=1.2_0
+    - r-sp >=1.4.1
+    - r-terra
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp
-    - r-sp >=1.2_0
+    - r-sp >=1.4.1
+    - r-terra
 
 test:
   commands:
