@@ -61,7 +61,6 @@ extra:
   recipe-maintainers:
     - conda-forge/r
 
-
 # Package: raster
 # Type: Package
 # Title: Geographic Data Analysis and Modeling
