@@ -3,6 +3,7 @@ About r-raster-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-raster-feedstock/blob/main/LICENSE.txt)
 
+
 About r-raster
 --------------
 
@@ -13,6 +14,7 @@ Package license: GPL-3.0-or-later
 Summary: Reading, writing, manipulating, analyzing and modeling of gridded spatial data. The package implements basic and high-level functions. Processing of very large files is supported. There is a also support for vector data operations such as intersections. See the manual and tutorials on <https://rspatial.org/> to get started.
 
 Development: https://github.com/rspatial/raster
+
 About r-raster
 --------------
 
