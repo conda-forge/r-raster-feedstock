@@ -37,6 +37,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-codetools
     - r-rcpp
     - r-sp >=1.4.5
     - r-terra >=1.6-41
@@ -47,9 +48,14 @@ requirements:
     - r-terra >=1.6-41
 
 test:
+  requires:
+    - r-codetools
+    - r-tinytest
   commands:
-    - $R -e "library('raster')"           # [not win]
-    - "\"%R%\" -e \"library('raster')\""  # [win]
+    - $R -e "library('raster')"                          # [not win]
+    - $R -e "tinytest::test_package('raster')"           # [not win]
+    - "\"%R%\" -e \"library('raster')\""                 # [win]
+    - "\"%R%\" -e \"tinytest::test_package('raster')\""  # [win]
 
 about:
   home: https://CRAN.R-project.org/package=raster
