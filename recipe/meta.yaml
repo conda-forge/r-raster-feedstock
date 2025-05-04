@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [ppc64le or win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,12 +40,12 @@ requirements:
     - r-codetools
     - r-rcpp
     - r-sp >=1.4.5
-    - r-terra >=1.6-41
+    - r-terra >=1.8-5
   run:
     - r-base
     - r-rcpp
     - r-sp >=1.4.5
-    - r-terra >=1.6-41
+    - r-terra >=1.8-5
 
 test:
   requires:
